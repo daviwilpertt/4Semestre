@@ -1,0 +1,7 @@
+.containerHeader{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    height: 60px;
+}

@@ -1,0 +1,1 @@
+box-sizing: border-box; // elemento ocupa apenas o espaço dele na tela, sem margin ou padding
