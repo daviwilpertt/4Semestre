@@ -9,5 +9,8 @@
 
 .linha1{
     display: flex;
-    margin: 20px;
+    margin: 0px;
+    justify-content: space-evenly;
+
+    
 }

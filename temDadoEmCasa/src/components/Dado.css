@@ -2,18 +2,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: auto;
     flex-direction: column;
 }
 
 .faces{
     border: 5px solid black;
     border-radius: 25%;
-    padding: 5px;
+    padding: 25px;
+    width: 30vh;
+    height: 30vh;
+    font-size: 30vh;
 }
 
-.botaoDado{
-    margin: 5px;
-    padding: 10px;
-    border-radius: 10px;
-}
