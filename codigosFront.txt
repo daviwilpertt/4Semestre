@@ -1,1 +1,2 @@
 box-sizing: border-box; // elemento ocupa apenas o espaço dele na tela, sem margin ou padding
+let i = Math.floor(Math.random() * array.lenght) // pega um numero aleatorio de acordo com o tamanho do array | Math.floor() // arredonda o valor

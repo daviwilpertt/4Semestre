@@ -1,0 +1,28 @@
+testes funcionais: 
+	-regressão: garante que mudanças recentes não causem erro no software que já funcionava
+	-integração: verifica a interação entre módulos ou componentes do sistema
+	-aceitação: confirma que o sistema está pronto para uso final
+
+testes não funcionais:
+	-desempenho:	
+		-carga: como o sistema se comporta em condições extremas
+		-estresse: sobrecarrega o sistema para achar o ponto de falha
+		-capacidade: determina a capacidade máxima de usuários ou requisições que o sistema pode suportar
+		-escalabilidade: testa a capacidade do sistema crescer em tamanho ou complexidade sem atrapalhar o desempenho
+
+	-seguranca:
+		-penetração: imular ataques reais para identificar vunerabilidades
+		-vulnerabilidade: identifica e classifica vulnerabilidades já conhecidas
+		-autentificação e autorização: garantir que apenas usuários autorizados tenho acesso a recursos específicos
+
+
+nivéis de testes:
+	-interface: comunicação entre front-end e back-end
+	-integração: verificam funcionalidades de forma isolada
+	-unidade: retorno do código deve acontecer como o esperado
+
+
+tipos de testes:
+	-caixa branca: sei o código, entrada e saída
+	-caixa preta: não sei o código, apenas entrada e saída
+	-caixa cinza: sei parte do código

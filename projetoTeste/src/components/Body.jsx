@@ -1,17 +1,21 @@
-import "./Body.css"
-import Demo1 from "./Demo1"
-import Demo2 from "./Demo2"
+import { useState } from "react";
+import "./Body.css";
+import Demo1 from "./Demo1";
+import Demo2 from "./Demo2";
 
 function Body() {
 
-  
+  const [emojis, setEmojis] = useState(["🤦‍♂️", "🫥", "😶‍🌫️", "🤬", "🦄", "🥷"]);
+  const [emoji, setEmoji] = useState("👌");
+
   return (
-      <div className="containerBody">
-          Body
+    <div className="containerBody">
+      Body
       <Demo1 />
       <Demo2 />
-      </div>
-  )
+      {emoji}
+    </div>
+  );
 }
 
-export default Body
+export default Body;
