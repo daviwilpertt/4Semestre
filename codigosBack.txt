@@ -1,0 +1,64 @@
+20/02
+encapsulamento: proteção dos detalhes
+	-restrição de acesso: sistema não lê o 0 a esquerda de qualquer número, preciso dizer para ele considerar
+	-string é um array de caracteres
+ 	-não posso usar .length em número, tenho que transformar com .toString()
+	-
+
+cpf.replaceAll('.', '').replaceAll('-', '') // remove os pontos e traço do cpf, ou qualquer caracter de uma string
+	-depois da vírgula, ele troca o '.' pelo '', removendo o que tinha antes
+
+~~
+
+27/02
+classes: molde, conceitos separados pronto para ser criado
+	-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
