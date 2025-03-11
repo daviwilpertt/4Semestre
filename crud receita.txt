@@ -1,0 +1,38 @@
+crud receita
+	fonte
+	destino(categoria)
+	valor
+	data
+	
+
+cenário 1 - sucesso
+
+	DADO que o usuário está na tela da receita
+	QUANDO ele inserir os dados:
+	
+	Fonte de Receita  | Valor da Receita | Data da Receita | Categoria da Receita 
+    	Salário           | 3000,00          | 10/03/2025      | Renda Fixa           
+
+	E clicar no botão de "Salvar"
+	ENTÃO a receita deve ser registrada com sucesso
+	E aparece uma mensagem informando que deu certo
+
+cenário 2 - falha
+
+	DADO que o usuário está na tela da receita
+	QUANDO ele inserir os dados de forma inválida:
+	
+	Fonte de Receita  | Valor da Receita | Data da Receita | Categoria da Receita 
+    	Renda Extra       | -500,00          | 10/03/2025      | Renda Fixa           
+
+	E clicar no botão de "Salvar"
+	ENTÃO aparece uma mensagem "valor da receita inválido"
+	E a receita não deve ser registrada
+
+cenário 3 - sem preenchimento
+	
+	DADO que o usuário está na tela da receita
+	QUANDO ele deixar algum espaço vazio
+	E clicar no botão de "Salvar"
+	ENTÃO deve aparecer uma mensagem "todos os campos deve ser preenchidos"
+
