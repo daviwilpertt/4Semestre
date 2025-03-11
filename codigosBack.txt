@@ -12,7 +12,13 @@ cpf.replaceAll('.', '').replaceAll('-', '') // remove os pontos e traço do cpf,
 
 27/02
 classes: molde, conceitos separados pronto para ser criado
-	-
+	
+	-herança: classe filho executa do mesmo jeito que a classe pai, podendo alterar
+		possui atributos 
+
+
+	-polimorfismo: execução tem que ser garantida, mas a forma é indiferente
+		possui ações
 
 
 

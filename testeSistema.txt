@@ -26,3 +26,26 @@ tipos de testes:
 	-caixa branca: sei o código, entrada e saída
 	-caixa preta: não sei o código, apenas entrada e saída
 	-caixa cinza: sei parte do código
+
+10/03
+
+TDD | test-driven development:
+	-faz o teste antes do código, de forma rápida
+	-primeiro escreve os testes, depois escreve os códigos de acordo com os teste, a fim de verificar e passar dos testes
+	
+
+BDD | behaviour-driven development:
+	-entrega o código de forma "compreensível" para o cliente, melhorando a colaboração e entendimento
+	-tem linguagem própria Gherkin
+
+	palavras-chaves:
+		-Cenário: facilita a visualização da problemática
+		-Given: dado um determinado contexto (tem-se determinada reação);
+		-When: quando ocorrer algo;
+		-Then: então se espera algo.
+		-And: adicionar ação
+		-But: adicionar ação negativa
+
+		-Exemplo: dada (given) uma nova promoção e (and) o usuário tiver cadastro, quando (then) ela for lançada 
+		oficialmente, então (then) será enviada uma notificação a um determinado grupo.
+
