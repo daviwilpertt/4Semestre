@@ -23,7 +23,7 @@ cenário 2 - falha
 	QUANDO ele inserir os dados de forma inválida:
 	
 	Fonte de Receita  | Valor da Receita | Data da Receita | Categoria da Receita 
-    	Renda Extra       | -500,00          | 10/03/2025      | Renda Fixa           
+    	Renda Extra       | -500,00          | 10/03/2025      | Extra           
 
 	E clicar no botão de "Salvar"
 	ENTÃO aparece uma mensagem "valor da receita inválido"

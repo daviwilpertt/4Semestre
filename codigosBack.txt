@@ -16,9 +16,35 @@ classes: molde, conceitos separados pronto para ser criado
 	-herança: classe filho executa do mesmo jeito que a classe pai, podendo alterar
 		possui atributos 
 
+public class Animal { // cria classe
+    protected String nome; // cria var protegida
+
+    public Animal(String nome) { // cria atributo
+        this.nome = nome; // get var protegida (só utiliza this. quando a var for private ou protected)
+    }
+
+ public class Cachorro extends Animal { // cria uma subClasse extendendo de Animal
+
+    public Cachorro(String nome) { // get var nome
+        super(nome);  // Chama o construtor da superclasse
+    }
+__________________________________________________________________________________________________________________________________________
 
 	-polimorfismo: execução tem que ser garantida, mas a forma é indiferente
 		possui ações
+
+
+public class Animal { // clia classe
+    public void emitirSom() { // cria interface
+        System.out.println("O animal faz um som."); // saida 
+    }
+}
+
+public class Cachorro extends Animal { // cria a subclasse, extendendo de Animal
+    @Override // sobrescreve o método
+    public void emitirSom() { // set
+        System.out.println("O cachorro late: Au au!"); // saida da subClasse
+
 
 
 
