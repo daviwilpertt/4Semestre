@@ -49,3 +49,60 @@ BDD | behaviour-driven development:
 		-Exemplo: dada (given) uma nova promoção e (and) o usuário tiver cadastro, quando (then) ela for lançada 
 		oficialmente, então (then) será enviada uma notificação a um determinado grupo.
 
+24/03
+
+testes automatizados:
+	-execução automática dos testes
+	-usa programas de automação para ver se o sistema está funcionando como esperado
+	-reduz os teste manuais, aumentando eficiência e precisão
+	-pode ser executado em paralelo ao sistmea ou de noite
+	
+
+hooks
+	-beforeAll: executa antes de todos os testes
+	-beforeEach: executa antes de cada teste
+	-afterEach: executa depois de cada teste
+	-afterAll: executa depois de todos os testes
+
+
+
+
+
+
+
+
+
+
+‬
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

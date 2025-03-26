@@ -1,0 +1,11 @@
+.listagem{
+    padding-bottom: 5px;
+    width: 90%;
+    color: black;
+
+}
+.listagem table, .listagem th, .listagem td{
+    border: 1px solid black;
+    
+}
+
