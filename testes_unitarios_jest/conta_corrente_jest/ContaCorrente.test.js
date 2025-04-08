@@ -1,21 +1,37 @@
-const ContaCorrente = require('./classes/ContaCorrente')
+const ContaCorrente = require('./classes/ContaCorrente');
 
-describe('teste da conta corrente', () => {
+describe('ContaCorrente', () => {
+    let contaMaria, contaJose;
 
-    test('deve criar duas contas', () => {
-        conta1 = new ContaCorrente()
-        conta1.nome('maria')
-        conta1.balancoInicial(200)
+    beforeEach(() => {
+        contaMaria = new ContaCorrente("Maria", 200);
+        contaJose = new ContaCorrente("José", 100);
+    });
 
-       const conta2 = new ContaCorrente()
-        conta2.nome('joao')
-        conta2.balancoInicial(100)
+    test('Verificar se as contas foram criadas corretamente', () => {
+        expect(contaMaria).toBeTruthy();
+        expect(contaJose).toBeTruthy();
+    });
 
-        expect(conta1.nome).toBe('maria');
-        expect(conta1.balancoInicial).toBe(200);
-        expect(conta2.nome).toBe('joao');
-        expect(conta2.balancoInicial).toBe(100);
-        
-    })
+    test('Saldos das contas são diferentes', () => {
+        expect(contaMaria.balanco).not.toBe(contaJose.balanco);
+    });
 
-})
+    test('Após saque de R$100 na conta da Maria, saldos devem ser iguais', () => {
+        contaMaria.sacar(100);
+        expect(contaMaria.balanco).toBe(contaJose.balanco);
+    });
+
+    test('Após depósito de R$50 na conta do José, o saldo de José deve ser igual ao de Maria menos R$50', () => {
+        contaJose.depositar(50);
+        expect(contaJose.balanco).toBe(contaMaria.balanco - 50);
+    });
+
+    test('Saque maior que o saldo disponível deve retornar false', () => {
+        expect(contaMaria.sacar(200)).toBe(true);
+    });
+
+    test('Saque dentro do saldo disponível deve retornar true', () => {
+        expect(contaMaria.sacar(50)).toBe(true);
+    });
+});
