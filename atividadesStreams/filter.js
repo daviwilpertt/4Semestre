@@ -17,7 +17,7 @@ const produtos = [
 ];
   
 const disponivel = produtos.filter(produto => {
-    if (produto.disponivel == true) {
+    if (produto.disponivel) {
         return produto.preco > 100
     }
 })
