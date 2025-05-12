@@ -6,7 +6,7 @@ describe('Gerenciador de Imóveis - Testes com jest.spyOn', () => {
     let mockBuscarEndereco, spyEnviarNotificacao
 
     beforeEach(() => {
-        gerenciador = new GerenciadorImoveis();
+        gerenciador = new GerenciadorImoveis()
 
         mockBuscarEndereco = jest.spyOn(gerenciador, 'buscarEnderecoPorCep')
         spyEnviarNotificacao = jest.spyOn(gerenciador, 'enviarNotificacao')
@@ -47,10 +47,10 @@ describe('Gerenciador de Imóveis - Testes com jest.spyOn', () => {
             proprietarioId: 'token123'
         };
 
-        mockBuscarEndereco.mockRejectedValue(new Error('Falha de rede'));
+        mockBuscarEndereco.mockRejectedValue(new Error('Falha de rede'))
 
         try {
-            await gerenciador.adicionarImovel(imovel); 
+            await gerenciador.adicionarImovel(imovel)
         } catch (error) {
             expect(spyEnviarNotificacao).not.toHaveBeenCalled()
             expect(error.message).toBe('Falha de rede')

@@ -50,6 +50,7 @@ describe('Gerenciador de Imóveis - Teste sem mock', () => {
             preco: 1000,
             status: 'disponível'
         }
+        
         const imovel2 = {
             endereco: 'Rua B',
             bairro: 'Trindade',
@@ -72,6 +73,7 @@ describe('Gerenciador de Imóveis - Teste sem mock', () => {
             status: 'disponível'
 
         }
+
         const imovel2 = {
             endereco: 'Rua D',
             bairro: 'Ingleses',
