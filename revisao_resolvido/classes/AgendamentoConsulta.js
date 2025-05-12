@@ -42,13 +42,10 @@ class AgendamentoConsulta {
     return dataObj.getTime() > agora.getTime();
   }
   
-  validaMedico(cep): Endereco{ 
-    axios.get('https://crm.org.br/{}', headers = {})
+  validaMedico(crm){ 
+    throw new Error("Método não disponível!");
+    //axios.get("https://crm.org.br/{}", headers = { })
   }
-}
-
-class Endereco{
-  
 }
 
 module.exports = AgendamentoConsulta;

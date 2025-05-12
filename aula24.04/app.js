@@ -8,7 +8,7 @@ let alunos = [
 ]
 
 function calcularMedia(notas) {
-    const soma = notas.reduce((acc, nota) => acc + nota, 0)
+    const soma = notas.reduce((num, nota) => num + nota, 0)
     return soma / notas.length
 }
 
@@ -67,7 +67,7 @@ app.post('/alunos/:matricula/notas', (req, res) => {
         })
     }
 
-    const aluno = alunos.find(a => a.matricula === parseInt(matricula));
+    const aluno = alunos.find(a => a.matricula === parseInt(matricula))
 
     if (!aluno) {
         return res.status(404).json({
